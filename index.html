@@ -19,7 +19,29 @@
       background-color: #f4f9ff;
       color: #333;
     }
+    .logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
 
+  .logo-bg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80px;
+    opacity: 0.15; /* semitransparente */
+  }
+
+  header h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-left: 100px; /* espacio para que el logo no tape el texto */
+  }
 
     header {
       background-color: #0077b6;
