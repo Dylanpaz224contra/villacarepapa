@@ -14,11 +14,47 @@
   </style>
 </head>
 <body>
-  <header><h1>Villa Case</h1></header>
-  <div class="content">
-    <h2>Credencial de Beneficios</h2>
-    <p>Accedé a beneficios exclusivos presentando tu credencial al momento de atenderte.</p>
-    <a href="index.html" class="btn">Volver al inicio</a>
+<header>
+  <div class="logo-container">
+    <img src="52fc9elogo.jpeg" alt="Logo Villa Care" class="logo-bg">
+    <h1>Villa Care</h1>
   </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="coberturas.html">Coberturas</a>
+    <a href="turnos.html">Turnos</a>
+    <a href="credencial.html">Credencial</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</header>
+
+<style>
+  .logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-bg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80px;
+    opacity: 0.15; /* semitransparente */
+  }
+
+  header h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-left: 100px; /* espacio para que el logo no tape el texto */
+  }
+</style>
+
 </body>
 </html>
