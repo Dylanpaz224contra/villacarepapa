@@ -170,6 +170,48 @@
     footer ul li a:hover {
       text-decoration: underline;
     }
+     .carousel-container {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    overflow: hidden;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel img {
+    min-width: 100%;
+    display: none;
+    border-radius: 12px;
+  }
+
+  .carousel img.active {
+    display: block;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .prev { left: 10px; }
+  .next { right: 10px; }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.7);
+  }
   </style>
 <body>
   <div class="topbar">
@@ -231,6 +273,42 @@
       </a>
     </div>
   </section>
+  <div class="carousel-container">
+  <div class="carousel">
+    <img src="wdawdwd.PNG" alt="Imagen 1" class="active">
+    <img src="servicio.jpeg" alt="Imagen 2">
+    <img src="vacun.jpeg" alt="Imagen 3">
+  </div>
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+</div>
+<script>
+  const images = document.querySelectorAll('.carousel img');
+  let current = 0;
+
+  function showImage(index) {
+    images.forEach((img, i) => {
+      img.classList.toggle('active', i === index);
+    });
+  }
+
+  document.querySelector('.prev').addEventListener('click', () => {
+    current = (current === 0) ? images.length - 1 : current - 1;
+    showImage(current);
+  });
+
+  document.querySelector('.next').addEventListener('click', () => {
+    current = (current + 1) % images.length;
+    showImage(current);
+  });
+
+  // Automático (opcional)
+  setInterval(() => {
+    current = (current + 1) % images.length;
+    showImage(current);
+  }, 5000);
+</script>
+
 
   <div class="hero-img"></div>
 
