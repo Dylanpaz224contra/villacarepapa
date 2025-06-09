@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villa Care - Consultorios Médicos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+ <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+
+    body {
+      background-color: #f4f9ff;
+      color: #333;
+    }
+
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+
+    nav a:hover {
+      color: #90e0ef;
+    }
+
+
+    .topbar {
+      font-size: 14px;
+      padding: 5px 40px;
+      background-color: #023e8a;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+
+
+    .service {
+      width: 140px;
+      text-align: center;
+    }
+
+
+    .service img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #0077b6;
+    }
+
+
+    .service p {
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+
+    .hero-img {
+      width: 100%;
+      height: 400px;
+      background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+    }
+
+
+    footer {
+      background-color: #023e8a;
+      color: white;
+      padding: 40px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+
+    footer div {
+      min-width: 200px;
+      margin-bottom: 20px;
+    }
+
+
+    footer h4 {
+      margin-bottom: 10px;
+      border-bottom: 2px solid #90e0ef;
+      padding-bottom: 5px;
+    }
+
+
+    footer ul {
+      list-style: none;
+    }
+
+
+    footer ul li {
+      margin-bottom: 5px;
+    }
+
+
+    footer ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+
+    footer ul li a:hover {
+      text-decoration: underline;
+    }
+  </style>
+<body>
+  <div class="topbar">
+    <div>📍 espronceda 789, Pcia de Buenos Aires</div>
+    <div>📞 3586-7471</div>
+  </div>
+
+  <header>
+    <h1>Villa Care</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="coberturas.html">Coberturas</a>
+      <a href="turnos.html">Turnos</a>
+      <a href="credencial.html">Credencial</a>
+      <a href="nosotros.html">Nosotros</a>
+    </nav>
+  </header>
+
+  <section class="services">
+    <div class="service">
+      <a href="servicios.html">
+        <img src="servicio.jpeg" alt="Servicios">
+        <p>Servicios</p>
+      </a>
+    </div>  
+    <div class="service">
+      <a href="coberturas.html">
+        <img src="essta sii.jpeg" alt="Coberturas">
+        <p>Coberturas</p>
+      </a>
+    </div>
+    <div class="service">
+      <a href="turnos.html">
+        <img src="turno.jpeg" alt="Turnos">
+        <p>Turnos</p>
+      </a>
+    </div>
+    <div class="service">
+      <a href="vacunacion.html">
+        <img src="vacun.jpeg" alt="Vacunación">
+        <p>Vacunación</p>
+      </a>
+    </div>
+    <div class="service">
+      <a href="credencial.html">
+        <img src="crede2.jpeg" alt="Credencial">
+        <p>Credencial</p>
+      </a>
+    </div>
+    <div class="service">
+      <a href="contacto.html">
+        <img src="servici.jpeg" alt="Contacto">
+        <p>Contacto</p>
+      </a>
+    </div>
+  </section>
+
+  <div class="hero-img"></div>
+
+  <footer>
+    <div>
+      <h4>INSTITUCIONAL</h4>
+      <ul>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="horarios.html">Horarios de Atención</a></li>
+        <li><a href="coberturas.html">Coberturas que Atendemos</a></li>
+        <li><a href="credencial.html">Credencial de Beneficios</a></li>
+        <li><a href="turnos.html">Reservar Turnos</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>CONTÁCTENOS</h4>
+      <ul>
+        <li><a href="ordenes.html">Solicitar Órdenes</a></li>
+        <li><a href="consultas.html">Consultas y Sugerencias</a></li>
+        <li><a href="trabajo.html">Trabaje con Nosotros</a></li>
+        <li><a href="profesionales.html">Profesionales de la Salud</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>INFORMACIÓN DE INTERÉS</h4>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=wgvqiH7iCRo&pp=0gcJCdgAo7VqN5tD">Videocapilaroscopía</a></li>
+        <li><a href="https://www.youtube.com/watch?v=wgvqiH7iCRo&pp=0gcJCdgAo7VqN5tD">Test de Aire Espirado</a></li>
+        <li><a href="https://www.youtube.com/watch?v=wgvqiH7iCRo&pp=0gcJCdgAo7VqN5tD">Plasma Rico en Plaquetas</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

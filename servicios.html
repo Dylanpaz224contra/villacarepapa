@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - Villa Case</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f4f9ff;
+      color: #015c63;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0077b6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto 40px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: #015c63;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      background-color: #e0f7fa;
+    }
+
+    .card i {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #0077b6;
+    }
+
+    .card p {
+      font-weight: 600;
+    }
+
+    .btn {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      background-color: #0077b6;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #023e8a;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Servicios Médicos</h1>
+
+  <div class="grid">
+    <a href="vacunacion.html" class="card">
+      <i class="fas fa-syringe"></i>
+      <p>Aplicación de Vacunas</p>
+    </a>
+    <a href="pediatria.html" class="card">
+      <i class="fas fa-child"></i>
+      <p>Especialidades Pediátricas</p>
+    </a>
+    <a href="adultos.html" class="card">
+      <i class="fas fa-users"></i>
+      <p>Especialidades para Adultos</p>
+    </a>
+    <a href="cardiologia.html" class="card">
+      <i class="fas fa-heartbeat"></i>
+      <p>Estudios Cardiológicos</p>
+    </a>
+    <a href="ecografia.html" class="card">
+      <i class="fas fa-wave-square"></i>
+      <p>Ecografía y Doppler</p>
+    </a>
+    <a href="audiologia.html" class="card">
+      <i class="fas fa-ear-listen"></i>
+      <p>Estudios Audiológicos</p>
+    </a>
+    <a href="laboratorio.html" class="card">
+      <i class="fas fa-vial"></i>
+      <p>Laboratorio de Análisis Clínicos</p>
+    </a>
+    <a href="imagenes.html" class="card">
+      <i class="fas fa-x-ray"></i>
+      <p>Diagnóstico por Imágenes</p>
+    </a>
+  </div>
+
+  <a href="index.html" class="btn">Volver al inicio</a>
+
+</body>
+</html>
