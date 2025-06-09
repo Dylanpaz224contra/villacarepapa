@@ -25,15 +25,16 @@
     align-items: center;
   }
 
-  .logo-bg {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 80px;
-    opacity: 0.15; /* semitransparente */
-  }
-
+.logo-bg {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80px; /* más grande si querés */
+  opacity: 0.7;  /* MÁS visible → podés subirlo a 0.5 si querés que se note más */
+  border-radius: 50%; /* lo hace circular */
+  overflow: hidden
+}
   header h1 {
     position: relative;
     z-index: 1;
